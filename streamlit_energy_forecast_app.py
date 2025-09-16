@@ -130,8 +130,8 @@ if train_button:
         st.write({
             'train_mae': float(mean_absolute_error(y_train, y_pred_train)),
             'test_mae': float(mean_absolute_error(y_test, y_pred_test)),
-            'train_rmse': float(mean_squared_error(y_train, y_pred_train, squared=False)),
-            'test_rmse': float(mean_squared_error(y_test, y_pred_test, squared=False))
+            'train_rmse': float(np.sqrt(mean_squared_error(y_train, y_pred_train))),
+            'test_rmse': float(np.sqrt(mean_squared_error(y_test, y_pred_test)))
         })
 
         # --- Plot historical + test predictions ---
