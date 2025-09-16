@@ -7,6 +7,8 @@ from xgboost import XGBRegressor
 
 st.set_page_config(page_title="Daily Energy Forecast (Per-ID)", layout="wide")
 st.title("Daily Energy Forecast — Per-ID Models")
+# Work-in-progress banner
+st.info("🚀 This app is actively being developed — more features will be added soon!")
 
 # --- Sidebar: settings ---
 st.sidebar.header("Settings")
